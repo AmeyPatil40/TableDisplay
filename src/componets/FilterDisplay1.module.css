@@ -1,0 +1,38 @@
+/* FilterDisplay1.module.css */
+
+.filterContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .filterLabel {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .filterSelect,
+  .filterInput {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filterButton {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filterButton:hover {
+    background-color: #d32f2f;
+  }
+  

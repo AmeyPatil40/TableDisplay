@@ -1,0 +1,19 @@
+/* FilterDispaly.module.css */
+
+.addFilterButton {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Padding for the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block */
+    font-size: 16px; /* Font size */
+    margin: 10px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .addFilterButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }

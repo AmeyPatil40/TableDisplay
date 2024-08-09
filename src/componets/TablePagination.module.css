@@ -1,0 +1,44 @@
+/* TablePagination.module.css */
+
+.paginationContainer {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+   
+  }
+  
+  .paginationText {
+    font-size: 14px;
+    color: black; 
+  }
+  
+  .paginationButton {
+    border: none;
+    color: black; 
+    padding: 2px 4px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    margin: 0 2px; 
+    
+  }
+  
+  .paginationButton:hover {
+    font-weight: bold; 
+  }
+  
+  .paginationSelect {
+    border: 1px solid #181717; 
+    border-radius: 2px; 
+    padding: 5px; 
+    font-size: 14px; 
+    font-weight: bold;
+  }
+  
+  .paginationSelect:focus {
+    outline: none; 
+    border-color: #007bff;
+  }
+  

@@ -1,0 +1,29 @@
+.mainDiv{
+    display: flex;
+    justify-content: space-around;
+    margin: 1px;
+}
+
+.mainDivButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    width: 80px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #F45B2C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.mainDivButton:hover{
+    background-color: white;
+    color: #F45B2C;
+
+}
+
+
+/* ColumnAddedPage.module.css */
+

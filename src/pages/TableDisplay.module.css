@@ -1,0 +1,68 @@
+.parentDiv{
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+    border: 1px solid  gray;
+    /* padding:10px; */
+    overflow: auto;
+    height: 550px;
+    
+}
+
+
+.parentDiv table{
+  margin: 2px;
+  color: black;
+  
+}
+
+.tableHead{
+  background-color: #F0F8FF;
+}
+.tableRow{
+    border: 1px solid salmon;
+}
+.tableCell:hover{
+ border: 1px solid black;
+ 
+}
+.tableCell{
+ /* min-width: 40px; */
+ max-width: 60px;
+}
+.tableCell:nth-child(1){
+    max-width: 50px;
+
+    /* background-color: red; */
+}
+.tableCell:hover{
+    cursor: pointer;
+}
+
+/* Custom Scrollbar Styling */
+.parentDiv::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+.parentDiv::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.parentDiv::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #f1f1f1; /* Adds space around the thumb */
+}
+
+.parentDiv::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovering over the scrollbar thumb */
+}
+
+/* For Firefox */
+.parentDiv {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+
