@@ -19,10 +19,30 @@
   z-index: 1000;
 }
 
+@media (max-width: 768px) {
+  .App {
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin: auto;
+    /* padding: 10px; */
+  }
+}
+
+/* @media (max-width: 480px) {
+  .App {
+    text-align: center;
+    
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+  }
+} */
 
 .App .content {
   padding: 20px;
   flex: 1;
+
 }
 .App-logo {
   height: 40vmin;
@@ -44,6 +64,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
 }
 
 .App-link {

@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import style from "./Navbar.module.css";
-import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+
 import FilterPopUp from "./FilterPopUp";
 import { DataContext } from "../context/DataContex";
-import ColumnAddedPage from "../pages/ColumnAddedPage";
+
 function Navbar() {
   const {columnDispalyPage,setColumnDispalyPage}=useContext(DataContext);
 

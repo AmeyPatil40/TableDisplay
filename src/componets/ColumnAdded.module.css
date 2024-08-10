@@ -59,8 +59,8 @@
     padding: 15px;
   } */
   .mainDiv1{
-   
-    width: 100%; 
+    width: 100%;
+    height: fit-content; 
     /* padding: 10px; */
 }
   .inputDiv {

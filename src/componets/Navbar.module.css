@@ -44,7 +44,8 @@
     .parentDiv {
       flex-direction: column;
       align-items: flex-start;
-      padding: 8px 15px;
+      padding: 5px;
+     
     }
   
     .parentDiv > div:first-child {
@@ -60,7 +61,10 @@
   /* Media query for small mobile devices */
   @media (max-width: 480px) {
     .parentDiv {
-      padding: 5px 10px;
+      padding: 5px;
+      width: 95%;
+      margin: auto;
+      /* margin-left: 3px; */
     }
   
     .parentDiv button {
