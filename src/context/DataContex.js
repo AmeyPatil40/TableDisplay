@@ -38,8 +38,15 @@ useEffect(()=>{
 },[filter])
 
 useEffect(()=>{
+    const filterColumn =columnAvailable
+    .filter((item) => item.isVisible === true)
+    .map((item) => item.columnName);
+     setDisplayColumn(filterColumn);
+},[])
+
+useEffect(()=>{
 fetchData();
-},[]); //filterApplied
+},[]); 
 
 
     return(

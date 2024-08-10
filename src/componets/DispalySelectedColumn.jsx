@@ -5,9 +5,18 @@ import ClearIcon from "@mui/icons-material/Clear";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 function DispalySelectedColumn() {
-  const { displayColumn, setDisplayColumn, columnAvailable } =
-    useContext(DataContext);
+  const {
+    displayColumn,
+    setDisplayColumn,
+    columnAvailable,
+    setColumnAvailable,
+  } = useContext(DataContext);
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+  const [handalData, setHandalData] = useState([]);
+
+  // useEffect(()=>{
+  //       setHandalData(columnAvailable)
+  // },[columnAvailable])
 
   const handleOnDragEnd = useCallback(
     (result) => {
@@ -27,9 +36,13 @@ function DispalySelectedColumn() {
     setDisplayColumn(filterColumn);
   }, [columnAvailable]);
 
-  const handleCheckboxChange = useCallback((e) => {
-    setIsCheckboxChecked(e.target.checked);
-  }, []);
+  const handalOnClick = (elm, e) => {
+    const filterCheck1 = columnAvailable.map((item) => {
+      return item.columnName === elm ? { ...item, isVisible: false } : item;
+    });
+    console.log(filterCheck1);
+    setColumnAvailable(filterCheck1);
+  };
 
   return (
     <div className={style.mainDiv2}>
@@ -56,7 +69,11 @@ function DispalySelectedColumn() {
                       {...provided.dragHandleProps}
                     >
                       <span>{elm}</span>
-                      <ClearIcon />
+                      <ClearIcon
+                        onClick={(e) => {
+                          handalOnClick(elm, e);
+                        }}
+                      />
                     </div>
                   )}
                 </Draggable>
