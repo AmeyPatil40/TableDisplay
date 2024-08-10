@@ -6,7 +6,6 @@ import React, {
   useEffect,
 } from "react";
 import style from "./ColumnAdded.module.css";
-import SearchIcon from "@mui/icons-material/Search";
 import { DataContext } from "../context/DataContex";
 import DisplayAvailableList from "./DisplayAvailableList";
 
@@ -61,7 +60,7 @@ function DispalyAllColumn() {
           type="text"
           onChange={handleSearch}
         />
-        <SearchIcon sx={{ cursor: "pointer", color: "#4169E1" }} />
+        {/* <SearchIcon sx={{ cursor: "pointer", color: "#4169E1" }} /> */}
       </div>
 
       <div className={style.dataDispalyDiv}>

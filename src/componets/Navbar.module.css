@@ -10,7 +10,7 @@
 
 .inputDiv{
     display: flex;
-    /* justify-content: center; */
+    /* justify-content: center; */  
     border: 1px solid black;
     align-items: center;
     padding: 0.3rem;
@@ -40,3 +40,31 @@
     background-color: black;
 }
 
+@media (max-width: 768px) {
+    .parentDiv {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 15px;
+    }
+  
+    .parentDiv > div:first-child {
+      margin-bottom: 10px;
+    }
+  
+    .parentDiv button {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Media query for small mobile devices */
+  @media (max-width: 480px) {
+    .parentDiv {
+      padding: 5px 10px;
+    }
+  
+    .parentDiv button {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+  }
