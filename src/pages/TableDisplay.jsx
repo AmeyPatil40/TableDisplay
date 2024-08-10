@@ -8,7 +8,6 @@ import {
   TableBody,
   TableCell,
   TableHead,
-  TablePagination,
   TableRow,
   TableSortLabel,
 } from "@mui/material";
@@ -130,7 +129,7 @@ function TableDisplay() {
             {dataToDisplay
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row) => (
-                <TableRow key={row.id} sx={{ height: "30px", width: "Auto" }}>
+                <TableRow key={row.id} className={style.tableRow}>
                   {displayColumn.map((column) => (
                     <TableCellData
                       key={column}

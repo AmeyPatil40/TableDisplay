@@ -1,10 +1,11 @@
 import { TableCell } from "@mui/material";
 import style from "../pages/TableDisplay.module.css";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function TableCellData({ row, column, handleDoubleClick }) {
   const [contenteditable1, setContenteditable1] = useState(false);
   const [rowColumnValue, setRowColumnValue] = useState(row[column]);
+
   return (
     <TableCell
       contentEditable={contenteditable1}
@@ -29,11 +30,13 @@ function TableCellData({ row, column, handleDoubleClick }) {
       {contenteditable1 ? (
         <input
           style={{
-            width: "90%",
-            height: "100%",
-            padding: "4px",
+            width: "70%",
+            height: "30px",
+            padding: "5px",
             outline: "none",
             border: "none",
+            fontWeight: "bold",
+            borderRadius: "10px",
           }}
           value={rowColumnValue}
           onChange={(e) => {
