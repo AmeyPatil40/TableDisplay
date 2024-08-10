@@ -14,7 +14,7 @@ export const DataProvider=({children})=>{
 
 const fetchData=async()=>{
     try{
-        const res=await axios.get("http://localhost:8080/posts");
+        const res=await axios.get("https://json-server-de5k.onrender.com/posts");
         const finalData=res.data;
         setData(finalData);
         let arrOneData=finalData[0];

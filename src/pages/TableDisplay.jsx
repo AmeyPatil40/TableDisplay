@@ -64,12 +64,14 @@ function TableDisplay() {
 
   const handleDoubleClick = async (id, column, value) => {
     try {
-      await axios.patch(`http://localhost:8080/posts/${id}`, {
+      await axios.patch(`https://json-server-de5k.onrender.com/posts/${id}`, {
         [column]: value,
       });
 
       // Fetch the updated data after the PATCH request
-      const updatedData = await axios.get("http://localhost:8080/posts");
+      const updatedData = await axios.get(
+        "https://json-server-de5k.onrender.com/posts"
+      );
       setData(updatedData.data);
     } catch (error) {
       console.error("Error updating data:", error);
